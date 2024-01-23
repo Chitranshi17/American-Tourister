@@ -1,0 +1,1919 @@
+
+html{
+  font-size: 62.5%;
+}
+*{
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+/* Header Component */
+.header{
+  height: 3rem;
+  background: linear-gradient(90deg , #d11e47 , #ef7922);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerHeading{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerHeading h6{
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.crossIcon{
+  display: none;
+}
+
+
+/* Navbar Component */
+.nav{
+  width: 100%;
+  height: 7rem;
+  background-color: white;
+  box-shadow: 0 .2rem .0rem 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navMain{
+  width: 96%;
+  height: 95%;
+  /* background-color: #d11e47; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.leftNav{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftNavLogo{
+  width: 80%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftNavLogo img{
+  width: 100%;
+  height: 80%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.midNav{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.midNav ul{
+ width: 85%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ list-style: none;
+}
+.midNav ul li:nth-child(2){
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.midNav ul li:nth-child(2) img{
+  width: 80%;
+  height: 80%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.midNav ul li a{
+  font-size: 1.7rem;
+  font-weight: 650;
+  text-decoration: none;
+  color: rgb(33, 32, 32);
+}
+.rightNav{
+  width: 13%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.rightNav ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+.rightNav ul li a{
+  font-size: 2.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+.menubar{
+  display: none;
+}
+.midNav ul li:first-child{
+  display: none;
+}
+
+/* Hero Carousel Components */
+
+.heroCarousel{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.heroCarouselSec{
+  width: 95%;
+  height: 96%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroSlide{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-item img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.heroSlide img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Shop Product Components */
+
+/* .shopProduct{
+  width: 100%;
+  height: 110vh;
+} */
+.topShopProduct{
+  width: 100%;
+  height: 30rem;
+  padding-inline: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.shopProductHeading{
+  width: 100%;
+  height: 45%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.shopHeadingColor h2{
+  color: #333;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.shopHeading{
+  width: 4.5%;
+  height: .8rem;
+  background: linear-gradient(90deg , #d11e47 , #ef7922);
+  border-radius: 6px;
+  margin-top: 2rem;
+}
+.shopProductButton{
+  width: 100%;
+  height: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shopHeadingButton{
+  width: 65%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.shopBtn{
+  width: 18%;
+  height: 5rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-radius: 5rem;
+  box-shadow: 0 2px 7px -2px #333;;
+  border: none;
+  background-color: transparent;
+}
+.shopBtn:first-child.active{
+  background-color:#272727;
+  border: #272727;
+  color: #fff;
+  transition: color .2s ease-in,background-color .2s ease-in,border-color .2s ease-in,box-shadow .2s ease-in;
+}
+
+.shopBtn:hover{
+  background-color:#272727;
+  border: #272727;
+  color: #fff;
+  transition: color .2s ease-in,background-color .2s ease-in,border-color .2s ease-in,box-shadow .2s ease-in;
+}
+
+
+
+
+/* bottomShopProduct Slider */
+
+.bottomShopProduct{
+  width: 100%;
+  height: 55rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomSProducts{
+  width: 95%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2.5rem;
+}
+.shopCardContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shopCardContainer button{
+  background-color: black;
+  border-radius: 50%;
+}
+.slick-arrow{
+  background-color: black;
+  border-radius: 50%;
+}
+.shopProductCard{
+  width: 95%;
+  height: 95%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: .5rem;
+}
+.shopProductCardTop{
+  width: 99%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shopProductCardImg{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shopProductCardImg img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.shopProductCardBottom{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shopProductCardContent{
+  width: 95%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.shopProductCardContent h3{
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.shopProductCardContent span{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.shopProductCardContent span h5{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d11e47;;
+}
+.shopProductCardContent span h6{
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: line-through;
+  text-align: center;
+  margin-left: 1rem;
+}
+.shopProductCardContent button{
+  width:  100%;
+  height: 4rem;
+  text-transform: uppercase;
+  background-color: #1b1a1a;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 2px 7px -2px #333;
+
+}
+.shopProductCardContent button:hover{
+  background-color: #fff;
+  color: #1b1a1a;
+}
+
+
+
+
+
+/* Banner Components */
+
+.bannerDesign{
+  width: 100%;
+  height: 50rem;
+  display: flex;
+}
+.leftImage{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftBannerImage{
+  width: 95%;
+  height: 95%;
+}
+.leftBannerImage img{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: center;
+}
+.rightText{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightBannerText{
+  width: 85%;
+  height: 50%;
+  background-color: white;
+  position: relative;
+  padding: 3rem;
+  right: 11rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.rightBannerText .topHeadingbanner{
+  width: 100%;
+  height: 40%;
+}
+.rightBannerText .topHeadingbanner h2{
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #272727;
+}
+.rightBannerText .topHeadingbanner .underLine{
+  width: 11.5%;
+  height: .7rem;
+  border-radius: 3rem;
+  background-color: #d11e47;
+}
+.rightBannerText p{
+  font-size: 1.4rem;
+  letter-spacing: .1rem;
+}
+.rightBannerText button{
+  width: 30%;
+  height: 25%;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-radius: 5rem;
+  border: none;
+  background-color: transparent;
+  box-shadow: 0 2px 7px -2px #333;
+}
+.rightBannerText button:hover{
+  background-color: #1b1a1a;
+  color: #fff;
+}
+
+
+
+
+/* Center Slider Components */
+
+.centerSlider{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #007bff; */
+  flex-direction: column;
+}
+.centerSliderSec{
+  width: 96%;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+.centerSliderCard{
+  width: 100%;
+  height: 35rem;
+  border: 8px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+}
+.centerSliderCard:hover{
+  position: relative;
+  bottom: 6rem;
+}
+.centerSliderCard img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.centerSlideSkew{
+  width: 70%;
+  height: 10rem;
+  background: linear-gradient(90deg,#d11e47,#ef7922);
+  transform: skew(0deg,4.7deg);
+  position: relative;
+  right: 19rem;
+  bottom: 8rem;
+  z-index: -1;
+}
+.centerSlider .centerSliderSec button{
+  background-color: black;
+  color: black;
+  border-radius: 50%;
+}
+
+
+
+/* Social Section */
+.socialSection{
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.socialContent{
+  width: 75%;
+  height: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.leftSocialContent{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+.leftSocialContent h3{
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #272727;
+}
+.leftSocialContent h6{
+  font-size: 2.5rem;
+  color: #272727;
+  font-weight: 700;
+}
+.rightSocialContent{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.rightSocialText{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.rightSocialText span{
+  width: 100%;;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightSocialText span h4{
+  font-size: 1.8rem;
+  padding-right: 3rem;
+  font-weight: 700;
+}
+.socialIcon{
+  width: 13%;
+  height: 50%;
+  margin-inline: 1rem;
+  border-radius: 50%;
+}
+.socialIcon:nth-child(2){
+  background: url("./assets/InstaIcon.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.socialIcon:nth-child(3){
+  background: url("./assets/FBIcon.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* Social Slider Section */
+
+.socialSlider{
+  width: 80%;
+  height: 67%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.socialSliderSec{
+  width: 90%;
+  height: 95%;
+  display: flex;
+}
+.socialCard{
+  width: 100%;
+  height: 35rem;
+  background-color: rgb(163, 188, 188);
+  border-radius: 3rem;
+  border: .4rem solid white;
+}
+.socialSliderSec button{
+  background-color: #272727;
+  color: black;
+  border-radius: 50%;
+}
+
+
+
+
+/* Slide Component */
+.slideSection{
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide-sec{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg,#d11e47,#ef7922);
+  transform: skew(0deg,4.7deg);
+}
+.slideCreate{
+  width: 70%;
+  height: 90%;
+  /* position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; */
+  background: -webkit-gradient(to right,#d11e47,#ef7922);
+  background: -o-linear-gradient(to right,#d11e47,#ef7922);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.circleDesign{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.circle{
+  width: 80%;
+  height: 50%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circleYellow{
+  background-color: #ffc107;
+}
+.circleBlue{
+  background-color: #007bff;
+}
+.circleWhite{
+  background-color: #f8f9fa;
+}
+.circle img{
+  width: 70%;
+  height: 100%;
+}
+.circle img:hover{
+  transform: scale(115%);
+}
+.circleText{
+  margin-top: 4rem;
+}
+.circleText h3{
+  font-size: 2rem;
+  color: white;
+}
+
+
+
+
+/* CarouselSlider Components */
+
+.cardSlider{
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.midCardSlider{
+  width: 75%;
+  height: 90%;
+  background-color: yellowgreen;
+}
+.Cards{
+  width: 100%;
+  height: 35rem;
+  border-radius: 3rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* SlideTrust Components */
+
+.slideTrustContainer{
+  width: 100%;
+  height: 55rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slideTrustSec{
+  width: 100%;
+  height: 75%;
+  background: linear-gradient(90deg,#d11e47,#ef7922);
+  transform: skew(0deg,4.7deg);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.slideTrustContent{
+  width: 100%;
+  height: 100%;
+  transform:  skew(0deg,-3.2deg);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.slideTrustCard{
+  width: 21%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.topSlideTrustCard{
+  width: 90%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topSlideTrustCard img{
+  width: 30%;
+  height: auto;
+}
+.bottomSlideTrustCard{
+  width: 90%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+.bottomSlideTrustCard h4{
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+}
+.bottomSlideTrustCard p{
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+/* CardSlider Components */
+
+.cardSlider{
+  width: 100%;
+  height: 40rem;
+}
+
+
+
+/* SlideBanner Components */
+
+.slideBannerSec{
+  width: 100%;
+  height: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transform: skew(0deg,4.7deg); */
+}
+
+.slideBanner{
+  width: 95%;
+  height: 95%;
+  /* background: url(""); */
+  background-color: rgb(73, 138, 73);
+  background: url("../src/assets/bannerSlider.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: skew(0deg,4.5deg);
+}
+
+
+
+/* slideForm Section */
+
+.slideFormSec{
+  width: 100%;
+  height: 38rem;
+  transform: skew(0deg,4.7deg);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  position: relative;
+  top: 7rem;
+  z-index: -1;
+  transform: skew(0deg,4.5deg);
+
+}
+.slideForm{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg,#d11e47,#ef7922);
+}
+.formDesign{
+  width: 70%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  transform: skew(0deg,-3.5deg);
+
+}
+.formDesign form{
+  width: 90%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.formDesign h2{
+  font-size: 2.2rem;
+  letter-spacing: .1rem;
+  color: white;
+}
+.formDesign form input{
+  width: 70%;
+  height: 3.5rem;
+  border: 1px solid white;
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: white;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+.formDesign form input::placeholder{
+  color: white;
+}
+.formDesign form button{
+  width: 13%;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+
+/* Footer Components */
+
+.footerSec{
+  width: 100%;
+  height: 100vh;
+  background-color: #272727;
+  padding: 2rem;
+  z-index: 3;
+}
+.topFooter{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topFooterSec{
+  width: 73%;
+  height: 95%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+.slashItems{
+  height: 60%;
+  display: flex;
+  align-items : center;
+  justify-content: space-around;
+}
+.topFooterSec h4{
+  font-size: 2rem;
+  color: white;
+}
+.topFooterSec p{
+  height: 80%;
+  color: white;
+  font-weight: 700;
+  /* letter-spacing: 2rem; */
+}
+.topFooterSec p a{
+  color : #fff;
+  font-size: 1.4rem;
+  letter-spacing: .3rem;
+  font-weight: 700;
+}
+.midFooter{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.midFooterSec{
+  width: 70%;
+  height: 95%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.midFooterHeading{
+  width: 100%;
+  height: 25%;
+}
+.midFooterHeading h3{
+  font-size: 2rem;
+  color: #fff;
+}
+.midFooterScrollbar{
+  width: 100%;
+  height: 75%;
+  overflow-y: scroll;
+}
+.midFooterScrollbar p{
+  font-size: 1.6rem;
+  color: #fff;
+}
+.midFooterScrollbar h3 , .midFooterScrollbar h5, .midFooterScrollbar h2{
+  color: #fff;
+  font-size: 2rem;
+}
+.bottomFooter{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+.aboutFooter{
+  width: 100%;
+  height: 70%;
+  display: flex;
+}
+.bottomFooterSec{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.aboutList{
+  width: 20%;
+  height: 90%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-block: 2rem;
+}
+.topAboutList{
+  width: 100%;
+  height: 30%;
+}
+.topAboutList h6{
+  font-size: 1.8rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: #fff;
+}
+.bottomAboutList{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.bottomAboutList ul{
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  padding: none;
+}
+.bottomAboutList ul li{
+  list-style: none;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.aboutFooterIcon{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.leftAboutFooterIcon{
+  width: 15%;
+  height: 95%;
+}
+.leftAboutFooterIcon img{
+  width: 70%;
+  height: 100%;
+}
+.rightAboutFooterIcon{
+  width: 12%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.iconFooter{
+  width: 18%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: white;
+}
+.aboutbottomFooter{
+  width: 100%;
+  height: 30%;
+  border-top: .1rem solid white;
+}
+.topAboutBottomFooter{
+  width: 70%;
+  height: 30%;
+}
+.topAboutBottomFooter ul{
+  width: 60%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.topAboutBottomFooter ul li{
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 700;
+}
+.bottomAboutBottomFooter{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.bottomAboutBottomFooter .visaIcon{
+  width: 70%;
+  height: 50%;
+}
+.bottomAboutBottomFooter .visaIcon img{
+  width: 10%;
+  height: 100%;
+}
+.bottomAboutBottomFooter .copyRight {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.bottomAboutBottomFooter .copyRight h6{
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************* PAGE DESIGN ************************************ */
+
+
+/* LuggagePage Components  &   BackpacksPage Components*/
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+
+.luggageSection{
+  width: 100%;
+  height: auto;
+}
+.luggageSec{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-areas:
+  'header  header header header header'
+  'menu  main main main main'
+  'menu  main main main main';
+}
+
+.item1{
+  height: 30rem;
+  background-color: #007bff;
+}
+.mainTopColumnLeft{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.mainTopColumnLeft span{
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 3rem;
+}
+.mainTopColumnLeft span p{
+  font-size: 1.6rem;
+  color: #9e9b9b;
+  padding-bottom: 0rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.luggageBg{
+  width: 100%;
+  height: 100%;
+  background: url("../src/assets/LuggageSlider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.backPacksBg{
+  width: 100%;
+  height: 100%;
+  background: url("../src/assets/BackPackSlider.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item2{
+  width: 100%;
+  height: 100vh;
+  position: sticky;
+  top: 0rem;
+  margin-right: 13rem;
+background-color: #007bff;
+}
+.columnLeft{
+  width: 100%;
+  height: 100%;
+  padding-left: 3rem;
+}
+.topColumnLeft{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.topColumnLeft h4{
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: black;
+}
+.bottomColumnLeft{
+  width: 100%;
+  height: 80%;
+}
+.item3{
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgb(98, 98, 7);
+}
+.topMain{
+  width: 100%;
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lefttopMain{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.lefttopMain span{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.lefttopMain span h3{
+  font-size: 1.7rem;
+  color: #333;
+  text-transform: uppercase;
+}
+.lefttopMain span h5{
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  color: #b8b5b5;
+}
+.righttopMain{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.righttopMain span{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.righttopMain span p{
+  height: 100%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.righttopMain span form{
+  width: 70%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
+  border: none;
+}
+.righttopMain span form select{
+  width: 90%;
+  height: 80%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+  border-bottom: .2rem solid black;
+}
+.bottomMain{
+  width: 100%;
+  height: auto;
+  background-color: violet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomMainSec{
+  width: 95%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+.mainCard{
+  width: 23%;
+  height: 53rem;
+  background-color: #333;
+  margin-top: 2rem;
+  margin-left:2rem;
+
+}
+.topMainCard{
+  width: 100%;
+  height: 55%;
+  background-color: forestgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.topMainCard img{
+  width: 95%;
+  height: 95%;
+}
+.topMainCard img:hover{
+  transform: scale(110%);
+  transition: 1s all ease-in-out;
+  cursor: pointer;
+}
+.bottomMainCard{
+  width: 100%;
+  height: 45%;
+  background-color: magenta;
+}
+
+/* DiscovePage Components */
+
+#discoverSec{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#disCover{
+  width: 95%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.discoverHeading{
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discoverHeading h2{
+  font-size: 3.5rem;
+  color : #272727;
+  font-weight: 700;
+}
+.discoverImage{
+  width: 100%;
+  height: 80rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding-left: 1.5rem;
+}
+.discoverCard{
+  width: 26.5rem;
+  height: 32rem;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.discoverCard:hover{
+  transform: scale(110%);
+  transition: 1s all ease-in-out;
+  cursor: pointer;
+}
+.topDiscover{
+  width: 95%;
+  height: 80%;
+}
+.topDiscover img{
+  width: 100%;
+  height: 100%;
+}
+.bottomDiscover{
+  width: 95%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomDiscover h3{
+  font-size: 2rem;
+  color: rgb(31, 31, 31);
+  text-align: center;
+  font-weight: 700;
+}
+/* Bottom ACQ Display None */
+.bottomACQSec{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 768px) {
+
+
+  /* DiscoverPage Components */
+
+  html{
+    font-size: 40%;
+  }
+  .headerHeading{
+    width: 60%;
+    margin-left: 6rem;
+  }
+  .crossIcon{
+    display: inline;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .crossIcon .cross{
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6rem;
+  }
+  .midNav{
+    display: none;
+  }
+  .navMain{
+    justify-content: space-between;
+  }
+  .rightNav{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rightNav ul{
+    width: 70%;
+    height: 100%;
+  }
+  .rightNav .menubar{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menubar a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: black;
+  }
+  .user{
+    display: none;
+  }
+  .leftNavLogo{
+    width: 80%;
+    height: 40%;
+  }
+
+
+
+
+
+  .midNav{
+    display: block;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  .midNav ul{
+    /* height: 3%; */
+   display: flex;
+   align-items: start;
+   justify-content: start;
+   flex-direction: column;
+   position: fixed;
+   height: 100vh;
+   background-color: #d11e47;
+   top: 0rem;
+   left: 0rem;
+   width:30rem;
+   height: 100vh;
+   background-color: #ac7474;
+   z-index: 3;
+  }
+  .midNav ul li:first-child{
+    display: block;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 3.5rem;
+    font-weight: 900;
+    padding: 3rem;
+    border-bottom: .1rem solid #333;
+  }
+  .midNav ul li:nth-child(2){
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-block: 1rem;
+    border-bottom: .1rem solid #333;
+  }
+  .midNav ul li:nth-child(2) img{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .midNav ul li a{
+    font-size: 1.7rem;
+    font-weight: 650;
+    text-decoration: none;
+    color: rgb(33, 32, 32);
+  }
+  .midNav ul {
+    display: none;
+  }
+  .heroCarousel{
+    width: 100%;
+    height : 53vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+  }
+  
+
+
+  /* Shop Product Components */
+
+ 
+  .shopProductHeading{
+    align-items: center;
+  }
+  .shopHeading{
+    width: 6.5%;
+    height: .7rem;
+  }
+  .shopHeadingColor h2{
+    font-size: 5rem;
+  }
+  .shopHeadingButton{
+    width: 80%;
+  }
+  .shopBtn{
+    width: 45%;
+    height: 7.5rem;
+    margin-inline: .1rem;
+    font-size: 2.5rem;
+  }
+  .bottomShopProduct{
+    width: 100%;
+    height: 68rem;
+    padding-inline: 2rem;
+  }
+
+  .bottomSProducts{
+    padding-top: 5rem;
+  }
+  .shopCardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+ 
+
+  /* Banner Components */
+  
+  .bannerDesign{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .leftImage{
+    width: 100%;
+    height: 55rem;
+  }
+  .leftBannerImage{
+    width: 100%;
+    height: 100%;
+  }
+  .rightText{
+    width: 100%;
+    height: 38rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rightBannerText{
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    position: relative;
+    padding: 3rem;
+    right: 0rem;
+    bottom: 5em;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .rightBannerText .topHeadingbanner{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .rightBannerText .topHeadingbanner h2{
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #272727;
+  }
+  .rightBannerText .topHeadingbanner .underLine{
+    width: 6%;
+    height: 1.1rem;
+    border-radius: 3rem;
+    background-color: #d11e47;
+  }
+  .rightBannerText p{
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: .1rem;
+  }
+  .rightBannerText button{
+    height: 10rem;
+    margin-top: 2rem;
+    font-size: 2.2rem;
+  }
+ 
+
+
+  /* SlideTrust Components */
+  
+  .slideTrustContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+  .slideTrustCard{
+    width: 45%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+ /* slideForm Section */
+
+.slideFormSec{
+  width: 100%;
+  height: 42rem;
+}
+.topAboutBottomFooter ul{
+  width: 100%;
+}
+
+
+
+/* DiscoverPage Components */
+
+.discoverSec{
+  width: 100%;
+  height: auto;
+}
+.disCover{
+  width: 95%;
+  height: auto;
+}
+.discoverHeading{
+  width: 100%;
+  height: 20rem;
+}
+.discoverImage{
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.discoverCard{
+  width: 45%;
+  height: 40rem;
+  margin-top: 2rem;
+}
+.bottomFooterDiscover{
+  display: none;
+}
+
+.bottomACQSec{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.topACQ{
+  width: 100%;
+  height: 60%;
+  padding-top: 1rem;
+}
+.topACQContent{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: start;
+  padding-left: 2rem;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.topACQContent ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+} 
+.topACQContent ul li{
+  width: 85%;
+  height: 20%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.topACQContent ul li span{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+}
+.topACQContent ul li span h3{
+  font-size: 2.5rem;
+}
+.topACQContent ul li span h6{
+  font-size: 2.5rem;
+}
+.bottomACQ{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.Acq-top{
+  width: 80%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-Acq-top{
+  width: 40%;
+  height: 100%;
+}
+.left-Acq-top img{
+  width: 60%;
+  height: 100%;
+}
+.right-Acq-top{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.iconColor{
+  color: #585757;
+}
+.Acq-bottom{
+  width: 95%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Acq-bottom ul{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.Acq-bottom ul li{
+  font-size: 2rem;
+}
+.visaIcon{
+  width: 95%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.visaIcon img{
+  width: 20%;
+  height: auto;
+}
+.copyRight{
+  width: 95%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.copyRight h6{
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+
+}
