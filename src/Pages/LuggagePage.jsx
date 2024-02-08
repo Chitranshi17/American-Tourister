@@ -25,8 +25,17 @@ const LuggagePage = () => {
     {
       id : 2,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/23-June-2023/LE0000301_1.jpg",
-      name : "",
-      
+      name : "FRONTEC",
+      star : "",
+      price : "19,000",
+      last_price : "23,750",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 3,
@@ -36,6 +45,7 @@ const LuggagePage = () => {
       price : "10,800",
       last_price : "13,500",
       sizeName : "3 Size",
+      btnText : "Add to Card",
       size : {
         cabin : "Cabin",
         medium : "Medium",
@@ -50,6 +60,7 @@ const LuggagePage = () => {
       price : "4,290",
       last_price : "8,500",
       sizeName : "3 Size",
+      btnText : "Add to Card",
       size : {
         cabin : "Cabin",
         medium : "Medium",
@@ -64,6 +75,7 @@ const LuggagePage = () => {
       price : "6,713",
       last_price : "8,950",
       sizeName : "3 Size",
+      btnText : "Add to Card",
       size : {
         cabin : "Cabin",
         medium : "Medium",
@@ -78,6 +90,7 @@ const LuggagePage = () => {
       price : "5,437",
       last_price : "7,250",
       sizeName : "3 Size",
+      btnText : "Add to Card",
       size : {
         cabin : "Cabin",
         medium : "Medium",
@@ -93,6 +106,7 @@ const LuggagePage = () => {
       price : "7,480",
       last_price : "8,800",
       sizeName : "3 Size",
+      btnText : "Add to Card",
       size : {
         cabin : "Cabin",
         medium : "Medium",
@@ -108,139 +122,402 @@ const LuggagePage = () => {
       price : "2,635",
       last_price : "3,100",
       sizeName : "3 Size",
+      btnText : "Add to Card",
       size : {
         cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
     },
     },
     {
       id : 9,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/26-Feb-2023/LE1001301_1.jpg",
-      name : ""
+      name : "Vicenza",
+      star : "",
+      price : "5,600",
+      last_price : "8,000",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 10,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/26-Feb-2023/GP8009001_1.jpg",
-      name : ""
+      name : "Splash",
+      star : "",
+      price : "3,485",
+      last_price : "4,100",
+      sizeName : "2 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large",
+    },
     },
     {
       id : 11,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/3-April-2023/FH0016001_1.jpg",
-      name : ""
+      name : "ALTAIR",
+      star : "",
+      price : "5,925",
+      last_price : "7,900",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 12,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/13-June-2023/lq0001001.jpeg",
-      name : ""
+      name : "SQUASEM",
+      star : "",
+      price : "8,900",
+      last_price : "11,125",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large",
+    },
     },
     {
       id : 12,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/17jan2024/LG1012001_1.jpg",
-      name : ""
+      name : "ORION",
+      star : "",
+      price : "4,394",
+      last_price : "7,990",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large",
+    },
     },
     {
       id : 13,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/17jan2024/LG1012001_1.jpg",
-      name : "",
+      name : "Frontec",
+      star : "",
+      price : "19,000",
+      last_price : "23,750",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 14,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/29-Mar-2023/LP9000001_1.jpg",
-      name : "",
+      name : "LOCKATION",
+      star : "",
+      price : "14,400",
+      last_price : "18,000",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 15,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/29-Mar-2023/LP9005001_1.jpg",
-      name : "",
+      name : "SWAG-ON GAMER BOY",
+      star : "",
+      price : "4,550",
+      last_price : "6,500",
+      sizeName : "1 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large",
+    },
     },
     {
       id : 16,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/3-July-2023/QO0111003_1.jpg",
-      name : "",
+      name : "Swag-On",
+      star : "",
+      price : "4,550",
+      last_price : "6,500",
+      sizeName : "1 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large",
+    },
     },
     {
       id : 17,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/23-June-2023/LD8001002_1.jpg",
-      name : "",
+      name : "SWAG - ON EMOJI",
+      star : "",
+      price : "4,690",
+      last_price : "6,700",
+      sizeName : "2 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large",
+    },
     },
     {
       id : 18,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/04sept2023/QV1074001_1.jpg",
-      name : "",
+      name : "Capella",
+      star : "",
+      price : "7,275",
+      last_price : "9,700",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 19,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/04oct2023/SB4061001_1.jpg",
-      name : "",
+      name : "Aerostep",
+      star : "",
+      price : "4,895",
+      last_price : "9,790",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 20,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/23-June-2023/LD8001002_1.jpg",
-      name : "",
+      name : "KUNA",
+      star : "",
+      price : "4,788",
+      last_price : "7,600",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 21,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/04sept2023/QV1074001_1.jpg",
-      name : "",
+      name : "Ellipso",
+      star : "",
+      price : "5,625",
+      last_price : "11,250",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 22,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/04oct2023/SB4061001_1.jpg",
-      name : "",
+      name : "CRUX",
+      star : "",
+      price : "5,085",
+      last_price : "10,170",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 23,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/28-Aug-2023/LE1001101_1.jpeg",
-      name : "",
+      name : "MAJORIS +",
+      star : "",
+      price : "5,415",
+      last_price : "9,500",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 24,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/3-July-2023/MD8006901_1.jpg",
-      name : "",
+      name : "ROLLIO",
+      star : "",
+      price : "8,100",
+      last_price : "13,500",
+      sizeName : "2 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large",
+    },
     },
     {
       id : 25,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/11oct2023/SB0009001_1.jpg",
-      name : "",
+      name : "PLAY4BLUE BLUE",
+      star : "",
+      price : "5,250",
+      last_price : "7,500",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 26,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/29-Mar-2023/LP9000001_1.jpg",
-      name : "",
+      name : "Play4blue",
+      star : "",
+      price : "5,250",
+      last_price : "7,500",
+      sizeName : "2 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large",
+    },
     },
     {
       id : 27,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/29-Mar-2023/LP9005001_1.jpg",
-      name : "",
+      name : "PLAY4BLUE SPORT",
+      star : "",
+      price : "5,250",
+      last_price : "7,500",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 28,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/26-Feb-2023/QI9009002_1.jpg",
-      name : "",
+      name : "CIRCURITY",
+      star : "",
+      price : "5,655",
+      last_price : "7,540",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 29,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/11oct2023/SB0031001_1.jpg",
-      name : "",
+      name : "Play4blue",
+      star : "",
+      price : "5,655",
+      last_price : "7,540",
+      sizeName : "3 Size",
+      btnText : "Add to Card",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 30,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/16jan2024/88G409005_1.jpg",
-      name : "",
+      name : "Airconic",
+      star : "",
+      price : "5,925",
+      last_price : "7,900",
+      sizeName : "3 Size",
+      btnText : "Notify Me",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 31,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/11oct2023/LR5000001_1.jpg",
-      name : "",
+      name : "Bloom",
+      star : "",
+      price : "5,985",
+      last_price : "8,550",
+      sizeName : "3 Size",
+      btnText : "Notify Me",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 32,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/02nov2023/LR9008001_1.jpg",
-      name : "",
+      name : "Petro",
+      star : "",
+      price : "4,980",
+      last_price : "8,300",
+      sizeName : "3 Size",
+      btnText : "Notify Me",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
     {
       id : 33,
       image : "https://cdn.staticans.com/image/tr:e-sharpen-01,h-350,w-350,cm-pad_resize/data/AmericanTourister/29dec2023/LR7001001_1.jpg",
-      name : "",
+      name : "Pop Dot",
+      star : "",
+      price : "6,020",
+      last_price : "8,600",
+      sizeName : "3 Size",
+      btnText : "Notify Me",
+      size : {
+        cabin : "Cabin",
+        medium : "Medium",
+        large : "Large"
+    },
     },
   ]
 
@@ -289,9 +566,8 @@ const LuggagePage = () => {
               </span>
               </div>
             </div>
-            <div className="bottomMain bg-body-tertiary">
+            <div className="bottomMain bg-body-secondary">
              <div className="bottomMainSec">
-
 
 
             {

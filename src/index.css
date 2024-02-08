@@ -532,7 +532,16 @@ html{
   height: 33%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  overflow: hidden;
+}
+.socialCardContent{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8rem;
 }
 .leftSocialContent{
   width: 40%;
@@ -847,7 +856,6 @@ html{
   top: 7rem;
   z-index: -1;
   transform: skew(0deg,4.5deg);
-
 }
 .slideForm{
   width: 100%;
@@ -1348,12 +1356,10 @@ background-color: #007bff;
   background-color: #333;
   margin-top: 2rem;
   margin-left:2rem;
-
 }
 .topMainCard{
   width: 100%;
   height: 55%;
-  background-color: forestgreen;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1371,9 +1377,84 @@ background-color: #007bff;
 .bottomMainCard{
   width: 100%;
   height: 45%;
-  background-color: magenta;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.bottomMainCardContent{
+  width: 95%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.bottomMainCardContent h6{
+  font-size: 2rem;
+  color: rgb(113, 109, 109);
+  font-weight: 700;
+}
+.bottomMainCardContent span{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.productSizeBtn button{
+  width: 25%;
+  height: 60%;
+  border-radius: 3rem;
+}
+.bottomMainCardContent .name{
+  width: 100%;
+  height: 15%;
+}
+.bottomMainCardContent .name h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+}
+.bottomMainCardContent .priceContent{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomMainCardContent .priceContent span{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bottomMainCardContent .priceContent span p{
+  font-size: 1.6rem;
+}
+.bottomMainCardContent .priceContent span p:first-child{
+  font-weight: 800;
+  color: red;
+}
+.bottomMainCardContent .priceContent span p:nth-child(2){
+  color: black;
+  text-decoration: line-through;
+  font-size: 1.4rem;
+}
+.bottomMainCardContent .AddtoCard{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomMainCardContent .AddtoCard button{
+  width: 99%;
+  height: 70%;
+  font-size: 1.6rem;
+  border-radius: 3rem;
+}
 /* DiscovePage Components */
 
 #discoverSec{

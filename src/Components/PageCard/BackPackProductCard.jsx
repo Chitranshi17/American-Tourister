@@ -1,17 +1,16 @@
 import React from "react";
 
-const ProductCard = ({data}) => {
+const BackPackProductCard = ({data}) => {
   return (
     <div className="mainCard">
       <div className="topMainCard">
-        <img src={data.image} alt="" />
+        <img src={data.image} alt=""/>
       </div>
       <div className="bottomMainCard">
         <div className="bottomMainCardContent">
         <h6>{data.sizeName}</h6>
         <span className="productSizeBtn">
-          <button className="btn btn-secondary text-light border-none btn-sm">{data.size.cabin}</button>
-          <button className="btn btn-secondary text-light border-none btn-sm">{data.size.medium}</button>
+          <button className="btn btn-secondary text-light border-none btn-sm">{data.size.small}</button>
           <button className="btn btn-secondary text-light border-none btn-sm">{data.size.large}</button>
         </span>
         <div className="name d-flex align-items-center justify-content-center">
@@ -30,4 +29,4 @@ const ProductCard = ({data}) => {
   );
 };
 
-export default ProductCard;
+export default BackPackProductCard;
